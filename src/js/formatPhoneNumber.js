@@ -9,9 +9,7 @@
 export default function formatPhoneNumber(phoneNumber) {
   let cleanedNumber = getNumbers(phoneNumber);
 
-  const result = getCorrectNumber(cleanedNumber);
-
-  return '+' + result;
+  return '+' + getCorrectNumber(cleanedNumber);
 }
 
 const getNumbers = (phoneNumber) => {
@@ -37,7 +35,5 @@ const checkNumbersLength = (number) => {
 const getCorrectLengthNumber = (number) => {
   const length = number.length;
 
-  return length < 11
-    ? '7812'.slice(0, 11 - number.length) + number
-    : number.replace(/^8/, '7');
+  return length < 11 ? '7812' + number : number.replace(/^8/, '7');
 };

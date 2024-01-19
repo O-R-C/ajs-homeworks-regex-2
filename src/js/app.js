@@ -1,4 +1,4 @@
 import formatPhoneNumber from './formatPhoneNumber';
 
-console.log(formatPhoneNumber('+7 - 905 - 232000'));
+console.log(formatPhoneNumber('8 (888) 888 88-88'));
 

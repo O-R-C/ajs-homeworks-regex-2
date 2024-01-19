@@ -30,7 +30,7 @@ const checkNumbersLength = (number) => {
   const allowedLengths = [7, 10, 11];
 
   if (!allowedLengths.includes(number.length)) {
-    throw new Error(`номер не корректен - ${number}`);
+    throw new Error('номер не корректен');
   }
 };
 

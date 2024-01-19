@@ -33,5 +33,9 @@ const checkNumbersLength = (number) => {
 };
 
 const getCorrectLengthNumber = (number) => {
-  return number.length === 7 ? '7812' + number : number.replace(/^8/, '7');
+  const length = number.length;
+
+  return length < 11
+    ? '7812'.slice(0, 11 - length) + number
+    : number.replace(/^8/, '7');
 };

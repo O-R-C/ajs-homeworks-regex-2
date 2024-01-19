@@ -1,5 +1,4 @@
-import Validator from './Classes/Validator';
+import formatPhoneNumber from './formatPhoneNumber';
 
-const validator = new Validator();
+console.log(formatPhoneNumber('+7 - 905 - 232000'));
 
-console.log(validator.validateUsername('Adam'));
